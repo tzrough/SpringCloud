@@ -1,4 +1,4 @@
-package com.focus.tzrough.eurekaserver;
+package com.tzrough.eurekaserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
