@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+spring:
+  profiles: peer1
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      # 需要修改 hosts 文件添加
+      # peer1       127.0.0.1
+      # peer2       127.0.0.1
+      # 否则无法开启 eureka server 集群
+      defaultZone: http://peer2:8762/eureka

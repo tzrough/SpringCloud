@@ -20,7 +20,7 @@ public class MyFilter extends ZuulFilter
      * 过滤器的类型
      *
      * pre          路由之前
-     * route      路由之时
+     * route        路由之时
      * post         路由之后
      * error        发送错误调用
      *
