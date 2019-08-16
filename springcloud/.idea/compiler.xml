@@ -12,11 +12,13 @@
         <module name="eureka-server" />
         <module name="service-ribbon" />
         <module name="config-server" />
+        <module name="config-client" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
